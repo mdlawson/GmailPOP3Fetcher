@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/google_account"
+        android:key="google_account">
+        <com.mdlawson.gmailpop3fetcher.preferences.SignInPreference
+            android:key="signed_in"
+            android:title="@string/sign_in"
+            android:defaultValue="false" />
+        <Preference
+            android:key="sign_out"
+            android:title="@string/sign_out"
+            android:dependency="signed_in"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/refresh"
+        android:key="refresh">
+        <CheckBoxPreference
+            android:key="auto_refresh"
+            android:title="@string/auto_refresh"
+            android:defaultValue="false" />
+        <com.mdlawson.gmailpop3fetcher.preferences.IntervalPreference
+            android:key="refresh_interval"
+            android:title="@string/refresh_interval"
+            android:defaultValue="15" />
+    </PreferenceCategory>
+</PreferenceScreen>

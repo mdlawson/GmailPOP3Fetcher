@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GMail POP3 Fetcher</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="auto_refresh">Auto Refresh</string>
+    <string name="refresh">Refresh</string>
+    <string name="refresh_interval">Refresh Interval</string>
+    <string name="google_account">Google account</string>
+    <string name="sign_in">Sign in to GMail</string>
+    <string name="sign_out">Sign out</string>
+    <string name="signed_in">Signed in!</string>
+    <string name="title_activity_debug">Debug</string>
+    <string name="mins">Minutes</string>
+</resources>
