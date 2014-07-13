@@ -12,8 +12,10 @@ public class BootReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Log.d(TAG, "Booted!");
+        if (intent.getAction().equals("android.intent.action.BOOT_COMPLETED")) {
+            Log.d(TAG, "Booted!");
 
-        RefreshService.update(context);
+            RefreshService.update(context);
+        }
     }
 }
